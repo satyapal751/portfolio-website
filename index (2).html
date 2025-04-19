@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satyapalsinh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .projects .card {
+      background: #fff;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .projects .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+    }
+    .btn-scroll-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Satyapalsinh Chudasama</h1>
+    <p>Frontend Developer | Web Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Satyapalsinh, a passionate frontend developer with skills in HTML, CSS, JavaScript, and beginner experience in Node.js and Python. I'm currently learning full-stack development and love building web applications.</p>
+    <img src="photo under 15kb.jpg" alt="Profile" style="margin-top:20px;border-radius:10px;width:100%;max-width:300px;">
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <h3>AI/ML Projects</h3>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=1000&q=80" alt="Music Genre Classification">
+      <h4>Music Genre Classification</h4>
+      <p>A deep learning project that classifies music into genres using TensorFlow. Trained on audio features like MFCC.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=1000&q=80" alt="COVID Analysis">
+      <h4>COVID-19 Data Analysis</h4>
+      <p>Analyzed COVID-19 trends using Python and visualized them with matplotlib and seaborn.</p>
+    </div>
+
+    <h3>Web Development Projects</h3>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1000&q=80" alt="Chat App">
+      <h4>Real-time Chat App</h4>
+      <p>A chatbox built using Node.js and Socket.io for real-time communication.</p>
+    </div>
+    <div class="card">
+      <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.webp" alt="Portfolio Website">
+      <h4>Portfolio Website</h4>
+      <p>A personal portfolio site built using HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: satyapalsinh@example.com</p>
+    <p>GitHub: <a href="https://github.com/satyapal751" target="_blank">github.com/satyapal751</a></p>
+    <p>LinkedIn: <a href="http://www.linkedin.com/in/satyapalsinh-chudasama-593a81319" target="_blank">linkedin.com/in/satyapalsinh-chudasama-2003satya</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Satyapalsinh Chudasama. All rights reserved.</p>
+  </footer>
+
+  <button class="btn-scroll-top" id="scrollTopBtn">⬆</button>
+
+  <script>
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    };
+    scrollTopBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>
